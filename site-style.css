@@ -252,6 +252,8 @@ input[type=submit]:hover {
     }
     .overlayText {
         font-size:40px;
+        text-shadow:0px 0px black, 0px 0px black, 0px 0px black, 0px 0px black;
+        -webkit-text-stroke:0px black;
     }
     .backgroundimage-1 {
         background-image:url("pens3_mobile.jpg");
@@ -261,5 +263,11 @@ input[type=submit]:hover {
     }
     .backgroundimage-3 {
         background-image:url("pens7_mobile.jpg");
+    }
+    .backgroundimage-1, .backgroundimage-2, .backgroundimage-3 {
+        background-attachment:fixed;
+        background-position:center;
+        background-repeat:repeat-y;
+        background-size:contain;
     }
 }
