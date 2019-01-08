@@ -97,20 +97,31 @@
         <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 
         <script>
+            var isMobile = window.matchMedia("only screen and (max-width: 730px)");
+
+            if(isMobile.matches) {
+                document.getElementById("footer").style.bottom = "0";
+            }
+
             var prevScrollpos = window.pageYOffset;
             var topPos = 200;
             var bottomPos = footer.offsetTop + 1300;
             window.onscroll = function() {
                 var currentScrollPos = window.pageYOffset;
                 if (prevScrollpos > currentScrollPos) {
-                    document.getElementById("footer").style.bottom = "-100px";
+                    if(!isMobile.matches) {
+                        document.getElementById("footer").style.bottom = "-100px";
+                    }
                     if(currentScrollPos < topPos) {
                         document.getElementById("header").style.top = "0";
                     }
                 } else {
                     document.getElementById("header").style.top = "-100px";
-                    if(currentScrollPos > bottomPos) {
+                    if((!isMobile.matches) && (currentScrollPos > bottomPos)) {
                         document.getElementById("footer").style.bottom = "0";
+                    }
+                    if((isMobile.matches) && (currentScrollPos < topPos)) {
+                        document.getElementById("header").style.top = "0";
                     }
                 }
                 prevScrollpos = currentScrollPos;

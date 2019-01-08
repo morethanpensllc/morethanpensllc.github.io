@@ -17,15 +17,15 @@ body, html {
     background-size:cover;
 }
 .backgroundimage-1 {
-    background-image:url("pens3.png");
+    background-image:url("pens3.jpg");
     min-height:150%;
 }
 .backgroundimage-2 {
-    background-image:url("hat1.png");
+    background-image:url("hat1.jpg");
     min-height:100%;
 }
 .backgroundimage-3 {
-    background-image:url("pens7.png");
+    background-image:url("pens7.jpg");
     min-height:125%;
 }
 .overlayText {
@@ -252,5 +252,14 @@ input[type=submit]:hover {
     }
     .overlayText {
         font-size:40px;
+    }
+    .backgroundimage-1 {
+        background-image:url("pens3_mobile.png");
+    }
+    .backgroundimage-2 {
+        background-image:url("hat1_mobile.jpg");
+    }
+    .backgroundimage-3 {
+        background-image:url("pens7_mobile.jpg");
     }
 }
