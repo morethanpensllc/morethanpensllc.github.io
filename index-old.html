@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="google-site-verification" content="CZEC_PUF5HqU2gsL8N7Kk17RPpWoHSvBQqIxMgPu16k" />
+        <meta name="Description" content="More Than Pens LLC - Home Page - Brad Lubinger - Customized local advertising on physical objects">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Andrew Lubinger">
+        <title>More Than Pens LLC</title>
+        <link rel="stylesheet" type="text/css" href="site-style-old.css">
+        <link rel="shortcut icon" type="image/x-icon" href="MoreThanPensIcon-2.png">
+        
+    </head>
+
+    <body style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">
+        <div style="background-color:rgb(255,147,0); position:fixed; width:100%; height: 500px; top:-500px;"></div>
+        <div id="header"></div>
+        <div class="backgroundimage-1">
+                <div class="overlayText" style="margin-top:17%;">
+                    <strong><span class="nowrap">Custom Advertising</span> On Objects From A <span class="nowrap">Name You Trust</span></strong>
+                </div>
+        </div>
+        <div class="backgroundimage-2">
+                
+                <strong><a href="https://www.viewmycatalogs.com/MoreThanPensLLC" target="_blank"><div class="between">View Our Catalogs</div></a></strong>
+                
+        </div>
+        <div class="backgroundimage-3">
+            <div class="interestForm">
+                    <div class="container">
+                        
+                            <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbwcGn5Iik_dX5ggt_4Cqz1hdBOMXKmjl2sI_GIkCw/exec">
+                             <div class="form-elements">
+                              <h1>Need something with <em>your</em> name on it?</h1>
+                              <div class="row">
+                                <div class="col-25">
+                                  <label for="fname">First Name</label>
+                                </div>
+                                <div class="col-75">
+                                  <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-25">
+                                  <label for="lname">Last Name</label>
+                                </div>
+                                <div class="col-75">
+                                  <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-25">
+                                  <label for="email">Email Address</label>
+                                </div>
+                                <div class="col-75">
+                                  <input type="email" id="email" name="email" value="" required placeholder="your.email@email.com">
+                                  <span class="email-invalid" style="display:none">Must be a valid email address</span>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-25">
+                                  <label for="phone">Phone Number</label>
+                                </div>
+                                <div class="col-75">
+                                  <input type="tel" id="phone" name="phonenumber" placeholder="(111)-222-3333" pattern="[0-9+-]{0,2}[(]{0,1}[0-9]{3}[)]{0,1}[-]{0,1}[0-9]{3}[-]{0,1}[0-9]{4}">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-25">
+                                  <label for="message">Message</label>
+                                </div>
+                                <div class="col-75">
+                                  <textarea id="message" name="message" placeholder="What you are looking for or any questions you have..." style="height:200px"></textarea>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <input type="submit" value="Submit">
+                              </div>
+                             </div>
+
+                             <div class="thankyou_message" style="display:none;">
+                              <h2>Thanks for contacting us!<br>We will get back to you soon!</h2>
+                             </div>
+                            </form>
+
+                    </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer-text">
+                <span class="nowrap">Contact Brad Lubinger: </span>
+                <span class="nowrap">Phone: <a href="tel:+1-216-513-9510">216-513-9510</a> </span>
+                <span class="nowrap">Email: <a href="mailto:morethanpensllc@gmail.com">morethanpensllc@gmail.com</a></span>
+            </div>
+        </div>
+        <div style="background-color:rgb(255,147,0); position:fixed; width:100%; height: 500px; bottom:-500px;"></div>
+
+        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+
+        <script>
+            var isMobile = window.matchMedia("only screen and (max-width: 730px)");
+
+            if(isMobile.matches) {
+                document.getElementById("footer").style.bottom = "0";
+            }
+
+            var prevScrollpos = window.pageYOffset;
+            var topPos = 200;
+            var bottomPos = footer.offsetTop + 1300;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    if(!isMobile.matches) {
+                        document.getElementById("footer").style.bottom = "-100px";
+                    }
+                    if(currentScrollPos < topPos) {
+                        document.getElementById("header").style.top = "0";
+                    }
+                } else {
+                    document.getElementById("header").style.top = "-100px";
+                    if((!isMobile.matches) && (currentScrollPos > bottomPos)) {
+                        document.getElementById("footer").style.bottom = "0";
+                    }
+                    if((isMobile.matches) && (currentScrollPos < topPos)) {
+                        document.getElementById("header").style.top = "0";
+                    }
+                }
+                prevScrollpos = currentScrollPos;
+            }
+
+            //Link used for testing form submission:
+            //https://script.google.com/macros/s/AKfycbyZeyQGuRQkcugceJpSAeqVel7jMswnWNBMw94g/exec
+            //Actual link:
+            //https://script.google.com/macros/s/AKfycbwcGn5Iik_dX5ggt_4Cqz1hdBOMXKmjl2sI_GIkCw/exec
+        </script>
+    </body>
+</html>

@@ -8,77 +8,25 @@
 body, html {
     height:100%;
 }
-.section1 {
-    position: relative;
-    width: 100%;
-    height: 150%;
-}
-.section2 {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.section3 {
-    position: relative;
-    width: 100%;
-    height: 125%;
-}
-.container1 {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.container2 {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.container3 {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 .backgroundimage-1, .backgroundimage-2, .backgroundimage-3 {
-    /*display:block;
-    position:fixed;
-    content:"";
+    position:relative;
     /*opacity:0.7;*/
-    /*background-attachment:fixed;
+    background-attachment:fixed;
     background-position:center;
     background-repeat:no-repeat;
-    background-size:cover;*/
-    /*z-index:-1;
-    height:100%;
-    width:100%;*/
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    /*background-size:100vw auto;*/
-    transform: translateZ(0);
-    will-change: transform;
+    background-size:cover;
 }
 .backgroundimage-1 {
     background-image:url("pens3.jpg");
+    min-height:150%;
 }
 .backgroundimage-2 {
     background-image:url("hat1.jpg");
+    min-height:100%;
 }
 .backgroundimage-3 {
     background-image:url("pens7.jpg");
+    min-height:125%;
 }
 .overlayText {
     position:absolute;
@@ -100,7 +48,7 @@ body, html {
     text-align:center;
     background-color:rgb(255,147,0);
     color:black;
-    z-index:100;
+    z-index:10;
     border-radius:10px;
 }
 .between:hover {
@@ -270,55 +218,6 @@ input[type=submit]:hover {
 .nowrap {
     white-space:nowrap;
 }
-.sidepanel  {
-    width: 0px;
-    position: fixed;
-    z-index: 101;
-    height: 200px;
-    top: 50px;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 7px;
-}
-.sidepanel a {
-    padding: 8px 8px 8px 3px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-.sidepanel a:hover {
-    color: #f1f1f1;
-}
-.openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 10px 10px 10px;
-    border: none;
-    z-index:100;
-    position:fixed;
-    height:100px;
-    width:100px;
-    top:0;
-    left:0;
-    background-image:url("menu.png");
-    background-size:100% 100%;
-    background-repeat:no-repeat;
-    background-position: center center;
-    transition: 0.5s;
-}
-.openbtn:hover {
-    background-color:#444;
-}
-button:focus {
-    outline:none;
-    border:none;
-}
                 
 @media only screen and (max-width:730px) {
     /* For mobile phones: */
@@ -333,15 +232,10 @@ button:focus {
     }
     #header {
         height:50px;
-        position:relative;
-        transition:top 0s;
     }
     #footer {
         background-size:100% 100%;
         height:50px;
-        position:relative;
-        bottom:0px;
-        transition:bottom 0s;
     }
     .footer-text {
         white-space:normal;
@@ -373,20 +267,12 @@ button:focus {
     }
     .backgroundimage-3 {
         background-image:url("pens7_mobile.jpg");
-        /*min-height:175%;*/
+        min-height:175%;
     }
-    /*.backgroundimage-1, .backgroundimage-2, .backgroundimage-3 {
+    .backgroundimage-1, .backgroundimage-2, .backgroundimage-3 {
         background-attachment:fixed;
         background-position:center;
         background-repeat:repeat-y;
         background-size:contain;
-        background-size:auto 100vh;
-    }*/
-    .openbtn {
-        width:50px;
-        height:50px;
-    }
-    .openbtn:hover {
-        background-color:#111;
     }
 }
