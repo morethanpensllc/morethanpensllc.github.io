@@ -17,10 +17,10 @@
         <div id="header"></div>
         <div id="mySidepanel" class="sidepanel">
           
-          <a href="#overview">Top</a>
-          <a href="#brad">Brad</a>
-          <a href="#catalogs">Catalogs</a>
-          <a href="#interest">Contact</a>
+          <a href="#overview" onclick="toggleNav()">Top</a>
+          <a href="#brad" onclick="toggleNav()">Brad</a>
+          <a href="#catalogs" onclick="toggleNav()">Catalogs</a>
+          <a href="#interest" onclick="toggleNav()">Contact</a>
         </div>
         <button id="myPanelButton" class="openbtn" onclick="toggleNav()"></button> 
         <div class="section1">
@@ -142,7 +142,7 @@
                         }
                     }
                 } else {
-                    if(currentScrollPos > topPos) {
+                    if((!isMobile.matches) && (currentScrollPos > topPos)) {
                       document.getElementById("header").style.top = "-100px";
                       if(!(document.getElementById("mySidepanel").style.width === "100px")) {
                         document.getElementById("myPanelButton").style.width = "50px";
