@@ -131,7 +131,7 @@
             window.onscroll = function() {
                 var currentScrollPos = window.pageYOffset;
                 if ((!isMobile.matches) && (prevScrollpos > currentScrollPos)) {
-                    if(!isMobile.matches) {
+                    if(currentScrollPos < bottomPos) {
                         document.getElementById("footer").style.bottom = "-100px";
                     }
                     if(currentScrollPos < topPos) {
@@ -142,7 +142,7 @@
                         }
                     }
                 } else {
-                    if(!isMobile.matches) {
+                    if(currentScrollPos > topPos) {
                       document.getElementById("header").style.top = "-100px";
                       if(!(document.getElementById("mySidepanel").style.width === "100px")) {
                         document.getElementById("myPanelButton").style.width = "50px";
