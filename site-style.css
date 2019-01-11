@@ -224,6 +224,14 @@ input[type=submit]:hover {
     height:100px;
     /*background-color:orange;*/
 }
+.mobileHeaderFix {
+    position:relative;
+    top:0;
+    left:0;
+    height:0;
+    width:0;
+    background-color:black;
+}
 #footer {
     background-image:url("MoreThanPensLogo-6.png");
     background-repeat:no-repeat;
@@ -336,6 +344,13 @@ button:focus {
         height:50px;
         position:relative;
         transition:top 0s;
+        width:calc(100% - 50px);
+        float:left;
+    }
+    .mobileHeaderFix {
+        width:50px;
+        height:50px;
+        float:left;
     }
     #footer {
         background-size:100% 100%;
@@ -344,6 +359,7 @@ button:focus {
         /*margin-top:0;*/
         bottom:0px;
         transition:bottom 0s;
+        float:bottom;
     }
     .footer-text {
         white-space:normal;
