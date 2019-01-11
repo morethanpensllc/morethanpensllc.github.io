@@ -7,6 +7,7 @@
 }
 body, html {
     height:100%;
+    padding:0px;
 }
 .section1 {
     position: relative;
@@ -346,7 +347,7 @@ button:focus {
         position:relative;
         transition:top 0s;
         width:calc(100% - 50px);
-        float:left;
+        float:right;
     }
     .mobileHeaderFix {
         width:50px;
@@ -360,7 +361,6 @@ button:focus {
         /*margin-top:0;*/
         bottom:0px;
         transition:bottom 0s;
-        float:bottom;
     }
     .footer-text {
         white-space:normal;
@@ -392,7 +392,7 @@ button:focus {
     }
     .backgroundimage-3 {
         background-image:url("pens7_mobile.jpg");
-        /*min-height:175%;*/
+        min-height:175%;
     }
     /*.backgroundimage-1, .backgroundimage-2, .backgroundimage-3 {
         background-attachment:fixed;
