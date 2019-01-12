@@ -228,7 +228,7 @@ input[type=submit]:hover {
 .mobileHeaderFix {
     position:relative;
     top:0;
-    left:0;
+    /*left:0;*/
     height:0;
     width:0;
     background-color:black;
@@ -392,7 +392,9 @@ button:focus {
     }
     .backgroundimage-3 {
         background-image:url("pens7_mobile.jpg");
-        min-height:175%;
+    }
+    .section3 {
+        min-height:150%;
     }
     /*.backgroundimage-1, .backgroundimage-2, .backgroundimage-3 {
         background-attachment:fixed;
