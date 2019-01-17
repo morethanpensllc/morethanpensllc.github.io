@@ -395,6 +395,7 @@ button:focus {
     }
     .section3 {
         min-height:150%;
+        overflow:hidden;
     }
     /*.backgroundimage-1, .backgroundimage-2, .backgroundimage-3 {
         background-attachment:fixed;
