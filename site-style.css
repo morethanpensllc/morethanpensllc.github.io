@@ -394,7 +394,7 @@ button:focus {
         background-image:url("pens7_mobile.jpg");
     }
     .section3 {
-        min-height:150%;
+        min-height:calc(750px + 15vh);
         overflow:hidden;
     }
     /*.backgroundimage-1, .backgroundimage-2, .backgroundimage-3 {
