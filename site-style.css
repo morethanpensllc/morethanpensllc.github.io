@@ -210,12 +210,12 @@ input[type=submit]:hover {
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#666666',GradientType=1 ); /* IE6-9 */
     /*padding:15px;
     text-align:center;*/
-    background-image:url("MoreThanPensLogo-7-alt.png");
+    background-image:url("MoreThanPensLogo-7-alt-3.png");
     background-repeat:no-repeat;
     background-position:center;
     background-size:contain;
-    /*background-color:rgb(255,147,0);*/
-    background-color:black;
+    background-color:rgb(255,147,0);
+    /*background-color:black;*/
     width:100%;
     /*position:relative;*/
     position:fixed;
