@@ -330,6 +330,18 @@ button:focus {
     outline:none;
     border:none;
 }
+.construction {
+    padding: 17px;
+    border-radius: 10px;
+    position: fixed;
+    margin-left: calc((100% - 327px) / 2);
+    margin-top: 10%;
+    z-index: 101;
+    text-align: center;
+    font-style: oblique;
+    color: black;
+    background-color: rgb(255,147,0);
+}
                 
 @media only screen and (max-width:730px) {
     /* For mobile phones: */
