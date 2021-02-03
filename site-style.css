@@ -342,6 +342,13 @@ button:focus {
     color: black;
     background-color: rgb(255,147,0);
 }
+@media only screen and (max-width:730px) {
+    .construction {
+        font-size: medium;
+        margin-left: calc((100% - 180px) / 2);
+        top: 80%;
+    }
+}
                 
 @media only screen and (max-width:730px) {
     /* For mobile phones: */
